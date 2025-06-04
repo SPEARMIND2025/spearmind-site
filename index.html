@@ -77,15 +77,20 @@
       color: #ccc;
       font-size: 0.95rem;
     }
-    .video-wrapper {
-      display: flex;
-      justify-content: center;
-      padding: 4rem 2rem;
+    footer {
+      background-color: #000000;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      border-top: 1px solid #333;
     }
-    video {
-      width: 80%;
-      height: auto;
-      border-radius: 12px;
+    footer a {
+      color: #999;
+      text-decoration: none;
+      margin: 0 1rem;
+    }
+    footer a:hover {
+      color: #fff;
     }
   </style>
 </head>
@@ -100,13 +105,6 @@
       <a href="#aiguide">AI Guide</a>
     </nav>
   </header>
-
-  <div class="video-wrapper">
-    <video autoplay muted loop playsinline>
-      <source src="media/spearmind-ai-visual.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
 
   <section class="section-grey section" id="home">
     <h2>Για Στρατηγικούς Ηγέτες</h2>
@@ -177,5 +175,11 @@
     <h2>AI Guide</h2>
     <p>Οδηγός και εκπαιδευτικό υλικό για την αξιοποίηση AI στην πράξη.</p>
   </section>
+
+  <footer>
+    <a href="#contact">Επικοινωνία</a>
+    <a href="#">Όροι Χρήσης</a>
+    <a href="#">Πολιτική Απορρήτου</a>
+  </footer>
 </body>
 </html>
