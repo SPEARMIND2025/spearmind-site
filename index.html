@@ -82,10 +82,9 @@
       justify-content: center;
       padding: 4rem 2rem;
     }
-    iframe {
+    video {
       width: 80%;
-      height: 400px;
-      border: none;
+      height: auto;
       border-radius: 12px;
     }
   </style>
@@ -103,7 +102,10 @@
   </header>
 
   <div class="video-wrapper">
-    <iframe src="https://www.youtube.com/embed/dXU0l3ZgexM" title="AI Communication Video" allowfullscreen></iframe>
+    <video autoplay muted loop playsinline>
+      <source src="media/spearmind-ai-visual.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
   </div>
 
   <section class="section-grey section" id="home">
