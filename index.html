@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="el">
 <head>
@@ -47,35 +48,43 @@
       padding: 4rem 2rem;
       text-align: center;
     }
+    #home {
+      background-image: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
     .section-grey {
       background-color: #121212;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #00d9ff;
+      margin-bottom: 1rem;
     }
     h2 {
       font-size: 2rem;
       color: #ffffff;
       margin-bottom: 2rem;
     }
-    .flex-row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
+    p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto 2rem auto;
+      line-height: 1.6;
     }
-    .box {
-      background-color: #1f1f1f;
-      padding: 2rem;
-      border-radius: 12px;
-      width: 280px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    .cta-button {
+      background-color: #00d9ff;
+      color: #000;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
     }
-    .box h3 {
-      font-size: 1.25rem;
-      color: #00d9ff;
-      margin-bottom: 1rem;
-    }
-    .box p {
-      color: #ccc;
-      font-size: 0.95rem;
+    .cta-button:hover {
+      background-color: #00b5d6;
     }
     footer {
       background-color: #000000;
@@ -106,74 +115,30 @@
     </nav>
   </header>
 
-  <section class="section-grey section" id="home">
-    <h2>Για Στρατηγικούς Ηγέτες</h2>
-    <div class="flex-row">
-      <div class="box">
-        <h3>AI Business Cases</h3>
-        <p>Ρεαλιστικά σενάρια εφαρμογής AI με μετρήσιμα οφέλη.</p>
-      </div>
-      <div class="box">
-        <h3>Presentations for C-level</h3>
-        <p>Αναλύσεις και decks έτοιμα για Διοικητικά Συμβούλια.</p>
-      </div>
-      <div class="box">
-        <h3>AI Vendor Assessment</h3>
-        <p>Βοηθάμε να αξιολογήσετε την αγορά και να επιλέξετε σωστά.</p>
-      </div>
-    </div>
-
-    <h2 style="margin-top:4rem">Για Επικοινωνία & Δημόσια Εικόνα</h2>
-    <div class="flex-row">
-      <div class="box">
-        <h3>AI Media Monitor</h3>
-        <p>Αυτόματη χαρτογράφηση συναισθημάτων & αφήγησης σε media/social.</p>
-      </div>
-      <div class="box">
-        <h3>Dashboard Insights</h3>
-        <p>Μετατροπή AI ευρημάτων σε reports για stakeholders.</p>
-      </div>
-      <div class="box">
-        <h3>Crisis Prediction Tools</h3>
-        <p>Προβλέψεις κρίσεων με βάση real-time δείκτες.</p>
-      </div>
-    </div>
-
-    <h2 style="margin-top:4rem">Για Startup Founders</h2>
-    <div class="flex-row">
-      <div class="box">
-        <h3>MVP με AI</h3>
-        <p>Από ιδέα σε proof-of-concept μέσα σε εβδομάδες.</p>
-      </div>
-      <div class="box">
-        <h3>Pitch-ready Partners</h3>
-        <p>Συνεργάτες που σας ενισχύουν στην αναζήτηση επενδυτών.</p>
-      </div>
-      <div class="box">
-        <h3>Strategy + Build</h3>
-        <p>Προσφέρουμε combo υπηρεσίες στρατηγικής και ανάπτυξης.</p>
-      </div>
-    </div>
+  <section id="home">
+    <h1>AI που Μεταφράζεται σε Στρατηγική</h1>
+    <p>Η SpearMind βοηθά ηγέτες και οργανισμούς να μετατρέψουν τον θόρυβο γύρω από την Τεχνητή Νοημοσύνη σε πραγματική επιχειρησιακή αξία.</p>
+    <button class="cta-button">Μάθε Περισσότερα</button>
   </section>
 
-  <section class="section" id="services">
+  <section id="services" class="section-grey">
     <h2>Υπηρεσίες</h2>
-    <p>Εδώ θα εμφανιστούν αναλυτικά οι βασικές υπηρεσίες της SpearMind.</p>
+    <p>Προσφέρουμε υπηρεσίες στρατηγικής AI, ανάλυσης δεδομένων, αξιολόγησης συνεργατών και ανάπτυξης proof-of-concept για επιχειρήσεις κάθε μεγέθους.</p>
   </section>
 
-  <section class="section-grey" id="about">
+  <section id="about">
     <h2>Σχετικά με εμάς</h2>
-    <p>Πληροφορίες για την ομάδα, την αποστολή και το όραμα της SpearMind.</p>
+    <p>Η SpearMind είναι μια εταιρεία στρατηγικής και τεχνολογίας που ειδικεύεται στην εφαρμογή της τεχνητής νοημοσύνης με σκοπό τη μετατροπή της καινοτομίας σε πράξη.</p>
   </section>
 
-  <section class="section" id="contact">
+  <section id="contact" class="section-grey">
     <h2>Επικοινωνία</h2>
-    <p>Στοιχεία επικοινωνίας, φόρμα ή links σε social media.</p>
+    <p>Μπορείτε να επικοινωνήσετε μαζί μας στο <a href="mailto:info@spearmind.ai">info@spearmind.ai</a>. Θα χαρούμε να μιλήσουμε για τις ανάγκες σας.</p>
   </section>
 
-  <section class="section-grey" id="aiguide">
+  <section id="aiguide">
     <h2>AI Guide</h2>
-    <p>Οδηγός και εκπαιδευτικό υλικό για την αξιοποίηση AI στην πράξη.</p>
+    <p>Οδηγός αξιοποίησης AI: από τη στρατηγική έως την τεχνολογική υλοποίηση. Κατεβάστε παραδείγματα, frameworks και use cases για τον κλάδο σας.</p>
   </section>
 
   <footer>
