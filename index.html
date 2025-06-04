@@ -1,64 +1,136 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="el">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SpearMind</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #0a0a0a;
+      color: #f0f0f0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    header {
+      background-color: #000000;
+      padding: 1.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.6);
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      font-weight: 500;
+    }
+    nav a {
+      color: #00d9ff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffffff;
+    }
+    section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .section-grey {
+      background-color: #121212;
+    }
+    h2 {
+      font-size: 2rem;
+      color: #ffffff;
+      margin-bottom: 2rem;
+    }
+    .flex-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .box {
+      background-color: #1f1f1f;
+      padding: 2rem;
+      border-radius: 12px;
+      width: 280px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+    .box h3 {
+      font-size: 1.25rem;
+      color: #00d9ff;
+      margin-bottom: 1rem;
+    }
+    .box p {
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+  </style>
 </head>
 <body>
-<!-- SVG icons and final HTML body -->
-<section class="section-grey section" id="strategy">
-  <h2>Για Στρατηγικούς Ηγέτες</h2>
-  <div class="flex-row">
-    <div class="box">
-      <h3><svg><use href="#icon-strategy" /></svg>AI Business Cases</h3>
-      <p>Ρεαλιστικά σενάρια εφαρμογής AI με μετρήσιμα οφέλη.</p>
-    </div>
-    <div class="box">
-      <h3><svg><use href="#icon-strategy" /></svg>Presentations for C-level</h3>
-      <p>Αναλύσεις και decks έτοιμα για Διοικητικά Συμβούλια.</p>
-    </div>
-    <div class="box">
-      <h3><svg><use href="#icon-strategy" /></svg>AI Vendor Assessment</h3>
-      <p>Βοηθάμε να αξιολογήσετε την αγορά και να επιλέξετε σωστά.</p>
-    </div>
-  </div>
-</section>
+  <header>
+    <nav>
+      <a href="#strategy">Στρατηγικοί Ηγέτες</a>
+      <a href="#insights">Επικοινωνία & Εικόνα</a>
+      <a href="#founders">Startup Founders</a>
+    </nav>
+  </header>
 
-<section class="section" id="insights">
-  <h2>Για Επικοινωνία & Δημόσια Εικόνα</h2>
-  <div class="flex-row">
-    <div class="box">
-      <h3><svg><use href="#icon-insight" /></svg>AI Media Monitor</h3>
-      <p>Αυτόματη χαρτογράφηση συναισθημάτων & αφήγησης σε media/social.</p>
+  <section class="section-grey section" id="strategy">
+    <h2>Για Στρατηγικούς Ηγέτες</h2>
+    <div class="flex-row">
+      <div class="box">
+        <h3>AI Business Cases</h3>
+        <p>Ρεαλιστικά σενάρια εφαρμογής AI με μετρήσιμα οφέλη.</p>
+      </div>
+      <div class="box">
+        <h3>Presentations for C-level</h3>
+        <p>Αναλύσεις και decks έτοιμα για Διοικητικά Συμβούλια.</p>
+      </div>
+      <div class="box">
+        <h3>AI Vendor Assessment</h3>
+        <p>Βοηθάμε να αξιολογήσετε την αγορά και να επιλέξετε σωστά.</p>
+      </div>
     </div>
-    <div class="box">
-      <h3><svg><use href="#icon-insight" /></svg>Dashboard Insights</h3>
-      <p>Μετατροπή AI ευρημάτων σε reports για stakeholders.</p>
-    </div>
-    <div class="box">
-      <h3><svg><use href="#icon-insight" /></svg>Crisis Prediction Tools</h3>
-      <p>Προβλέψεις κρίσεων με βάση real-time δείκτες.</p>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section class="section-grey section" id="founders">
-  <h2>Για Startup Founders</h2>
-  <div class="flex-row">
-    <div class="box">
-      <h3><svg><use href="#icon-launch" /></svg>MVP με AI</h3>
-      <p>Από ιδέα σε proof-of-concept μέσα σε εβδομάδες.</p>
+  <section class="section" id="insights">
+    <h2>Για Επικοινωνία & Δημόσια Εικόνα</h2>
+    <div class="flex-row">
+      <div class="box">
+        <h3>AI Media Monitor</h3>
+        <p>Αυτόματη χαρτογράφηση συναισθημάτων & αφήγησης σε media/social.</p>
+      </div>
+      <div class="box">
+        <h3>Dashboard Insights</h3>
+        <p>Μετατροπή AI ευρημάτων σε reports για stakeholders.</p>
+      </div>
+      <div class="box">
+        <h3>Crisis Prediction Tools</h3>
+        <p>Προβλέψεις κρίσεων με βάση real-time δείκτες.</p>
+      </div>
     </div>
-    <div class="box">
-      <h3><svg><use href="#icon-launch" /></svg>Pitch-ready Partners</h3>
-      <p>Συνεργάτες που σας ενισχύουν στην αναζήτηση επενδυτών.</p>
+  </section>
+
+  <section class="section-grey section" id="founders">
+    <h2>Για Startup Founders</h2>
+    <div class="flex-row">
+      <div class="box">
+        <h3>MVP με AI</h3>
+        <p>Από ιδέα σε proof-of-concept μέσα σε εβδομάδες.</p>
+      </div>
+      <div class="box">
+        <h3>Pitch-ready Partners</h3>
+        <p>Συνεργάτες που σας ενισχύουν στην αναζήτηση επενδυτών.</p>
+      </div>
+      <div class="box">
+        <h3>Strategy + Build</h3>
+        <p>Προσφέρουμε combo υπηρεσίες στρατηγικής και ανάπτυξης.</p>
+      </div>
     </div>
-    <div class="box">
-      <h3><svg><use href="#icon-launch" /></svg>Strategy + Build</h3>
-      <p>Προσφέρουμε combo υπηρεσίες στρατηγικής και ανάπτυξης.</p>
-    </div>
-  </div>
-</section>
+  </section>
 </body>
 </html>
